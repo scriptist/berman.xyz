@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Mike" src="./assets/mike-draft.png">
+    <ComingSoon msg="Coming Soon"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ComingSoon from "./components/ComingSoon.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    ComingSoon
   }
 };
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  align-items: center;
+  background-color: #eb8d4e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+  min-height: 100%;
 }
 </style>

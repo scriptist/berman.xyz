@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Mike" src="./assets/mike-draft.png">
     <ComingSoon msg="Coming Soon"/>
   </div>
 </template>
@@ -26,6 +25,10 @@ body {
   margin: 0;
   height: 100%;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 #app {

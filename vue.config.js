@@ -6,8 +6,10 @@ module.exports = {
       assetPath: "dist",
       deployPath: "/",
       pwa: false,
-      enableCloudfront: false,
-      uploadConcurrency: 5
+      enableCloudfront: true,
+      uploadConcurrency: 5,
+      cloudfrontId: "E2QV315DYGO20J",
+      cloudfrontMatchers: "/*"
     }
   }
 };

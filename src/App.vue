@@ -22,8 +22,9 @@ export default {
 
 html,
 body {
-  margin: 0;
+  background-color: #eb8d4e;
   height: 100%;
+  margin: 0;
   padding: 0;
 }
 
@@ -33,7 +34,6 @@ img {
 
 #app {
   align-items: center;
-  background-color: #eb8d4e;
   color: white;
   display: flex;
   flex-direction: column;

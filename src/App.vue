@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <ComingSoon msg="Coming Soon"/>
+    <SupportingImage class="image" :section="section" />
+    <Content class="content" :section="section" @changeSection="handleChangeSection" />
   </div>
 </template>
 
 <script>
-import ComingSoon from "./components/ComingSoon.vue";
+import SupportingImage from "./components/SupportingImage.vue";
+import Content from "./components/Content.vue";
+import { Sections } from "./constants.js";
 
 export default {
-  name: "app",
+  name: "App",
   components: {
-    ComingSoon
+    SupportingImage,
+    Content
+  },
+  data: () => ({
+    section: Sections[0]
+  }),
+  methods: {
+    handleChangeSection(section) {
+      this.section = section;
+    }
   }
 };
 </script>
@@ -20,25 +32,41 @@ export default {
   box-sizing: border-box;
 }
 
-html,
 body {
-  background-color: #eb8d4e;
-  height: 100%;
   margin: 0;
-  padding: 0;
 }
 
 img {
   max-width: 100%;
 }
 
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+</style>
+
+<style lang="scss" scoped>
 #app {
-  align-items: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-family: sans-serif;
-  justify-content: center;
-  min-height: 100%;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.image {
+  background-color: #eb8d4e;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 50vw;
+}
+
+.content {
+  background: white;
+}
+
+.image + .content {
+  padding-left: 50vw;
 }
 </style>

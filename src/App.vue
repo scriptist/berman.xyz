@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SupportingImage class="image" :section="section" />
+    <SupportingImage class="image" :section="section" v-if="!mobile" />
     <Content class="content" :section="section" @changeSection="handleChangeSection" />
   </div>
 </template>
@@ -10,6 +10,8 @@ import SupportingImage from "./components/SupportingImage.vue";
 import Content from "./components/Content.vue";
 import { Sections } from "./constants.js";
 
+const mobileMediaQuery = window.matchMedia("(max-width: 550px)");
+
 export default {
   name: "App",
   components: {
@@ -17,12 +19,23 @@ export default {
     Content
   },
   data: () => ({
+    mobile: false,
     section: Sections[0]
   }),
   methods: {
     handleChangeSection(section) {
       this.section = section;
+    },
+    testMediaQuery(e) {
+      this.mobile = e.matches;
     }
+  },
+  created() {
+    this.testMediaQuery(mobileMediaQuery);
+    mobileMediaQuery.addListener(this.testMediaQuery);
+  },
+  destroyed() {
+    mobileMediaQuery.removeListener(this.testMediaQuery);
   }
 };
 </script>

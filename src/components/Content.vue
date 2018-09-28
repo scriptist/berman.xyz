@@ -1,53 +1,49 @@
 <template>
-  <div class="content">
-    <h1>{{section}}</h1>
-    <div>
-      <button @click="moveBy(-1)">Prev</button>
-      <button @click="moveBy(1)">Next</button>
-    </div>
+  <div class="content" ref="content">
+    <Section ref="section" :section="section" v-for="section in sections" />
   </div>
 </template>
 
 <script>
 import { Sections } from "../constants.js";
+import Section from "./Section.vue";
 
 export default {
   name: "Content",
+  components: {
+    Section
+  },
+  data: () => ({
+    sections: Sections
+  }),
   props: {
     section: String
   },
   methods: {
-    moveBy(delta) {
-      const currentIndex = Sections.indexOf(this.section);
-      const newIndex = Math.min(
-        Sections.length - 1,
-        Math.max(0, currentIndex + delta)
-      );
-      this.$emit("changeSection", Sections[newIndex]);
+    checkCurrentSection() {
+      const windowMiddle = window.innerHeight / 2;
+      const sectionEl = this.$refs.section.find(ref => {
+        const rect = ref.$el.getBoundingClientRect();
+        return rect.bottom > windowMiddle;
+      });
+      if (sectionEl && sectionEl.section !== this.section) {
+        this.$emit("changeSection", sectionEl.section);
+      }
     }
+  },
+  created() {
+    window.addEventListener("scroll", this.checkCurrentSection);
+  },
+  mounted() {
+    this.checkCurrentSection();
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.checkCurrentSection);
   }
 };
 </script>
 
 <style scoped lang="scss">
 .content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
-  padding-bottom: 100px;
-  text-align: center;
-}
-
-h1 {
-  font-family: "Quattrocento", sans-serif;
-  font-weight: 300;
-  margin: 0;
-}
-
-button {
-  font-weight: 300;
-  margin: 10px 5px;
 }
 </style>

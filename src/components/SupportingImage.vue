@@ -9,18 +9,18 @@
 </template>
 
 <script>
-import { Sections } from "../constants.js";
+import { Sections } from '../constants.js';
 
 export default {
-  name: "SupportingImage",
+  name: 'SupportingImage',
   props: {
-    section: String
+    section: String,
   },
   computed: {
     layers() {
       return Sections.slice(0, Sections.indexOf(this.section) + 1);
-    }
-  }
+    },
+  },
 };
 </script>
 

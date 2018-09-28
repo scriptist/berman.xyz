@@ -6,21 +6,21 @@
 </template>
 
 <script>
-import SupportingImage from "./components/SupportingImage.vue";
-import Content from "./components/Content.vue";
-import { Sections } from "./constants.js";
+import SupportingImage from './components/SupportingImage.vue';
+import Content from './components/Content.vue';
+import { Sections } from './constants.js';
 
-const mobileMediaQuery = window.matchMedia("(max-width: 550px)");
+const mobileMediaQuery = window.matchMedia('(max-width: 550px)');
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     SupportingImage,
-    Content
+    Content,
   },
   data: () => ({
     mobile: false,
-    section: Sections[0]
+    section: Sections[0],
   }),
   methods: {
     handleChangeSection(section) {
@@ -28,7 +28,7 @@ export default {
     },
     testMediaQuery(e) {
       this.mobile = e.matches;
-    }
+    },
   },
   created() {
     this.testMediaQuery(mobileMediaQuery);
@@ -36,7 +36,7 @@ export default {
   },
   destroyed() {
     mobileMediaQuery.removeListener(this.testMediaQuery);
-  }
+  },
 };
 </script>
 
@@ -63,7 +63,7 @@ button {
 
 <style lang="scss" scoped>
 #app {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 .image {

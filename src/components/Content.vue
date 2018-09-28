@@ -9,19 +9,19 @@
 </template>
 
 <script>
-import { Sections } from "../constants.js";
-import Section from "./Section.vue";
+import { Sections } from '../constants.js';
+import Section from './Section.vue';
 
 export default {
-  name: "Content",
+  name: 'Content',
   components: {
-    Section
+    Section,
   },
   data: () => ({
-    sections: Sections
+    sections: Sections,
   }),
   props: {
-    section: String
+    section: String,
   },
   methods: {
     checkCurrentSection() {
@@ -31,19 +31,19 @@ export default {
         return rect.bottom > windowMiddle;
       });
       if (sectionEl && sectionEl.section !== this.section) {
-        this.$emit("changeSection", sectionEl.section);
+        this.$emit('changeSection', sectionEl.section);
       }
-    }
+    },
   },
   created() {
-    window.addEventListener("scroll", this.checkCurrentSection);
+    window.addEventListener('scroll', this.checkCurrentSection);
   },
   mounted() {
     this.checkCurrentSection();
   },
   destroyed() {
-    window.removeEventListener("scroll", this.checkCurrentSection);
-  }
+    window.removeEventListener('scroll', this.checkCurrentSection);
+  },
 };
 </script>
 

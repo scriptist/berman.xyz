@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: "Section",
+  name: 'Section',
   props: {
-    section: String
-  }
+    section: String,
+  },
 };
 </script>
 
@@ -23,7 +23,7 @@ export default {
 }
 
 h1 {
-  font-family: "Quattrocento", sans-serif;
+  font-family: 'Quattrocento', sans-serif;
   font-weight: 300;
   margin: 0;
 }

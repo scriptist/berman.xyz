@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import { Sections } from "../constants.js";
-
 export default {
   name: "Section",
   props: {

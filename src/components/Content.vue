@@ -1,6 +1,10 @@
 <template>
   <div class="content" ref="content">
-    <Section ref="section" :section="section" v-for="section in sections" />
+    <Section
+      ref="section"
+      :key="section"
+      :section="section"
+      v-for="section in sections" />
   </div>
 </template>
 

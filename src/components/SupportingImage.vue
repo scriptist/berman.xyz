@@ -1,6 +1,10 @@
 <template>
   <div class="root">
-      <img class="layer" :src="`/layers/${layer}.png`" v-for="layer in layers">
+      <img
+        class="layer"
+        :key="layer"
+        :src="`/layers/${layer}.png`"
+        v-for="layer in layers" />
   </div>
 </template>
 

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { Sections } from '../constants.js';
+import { SectionKeys } from '../constants.js';
 
 export default {
   name: 'SupportingImage',
@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     layers() {
-      return Sections.slice(0, Sections.indexOf(this.section) + 1);
+      return SectionKeys.slice(0, SectionKeys.indexOf(this.section) + 1);
     },
   },
 };

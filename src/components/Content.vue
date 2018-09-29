@@ -2,14 +2,14 @@
   <div class="content" ref="content">
     <Section
       ref="section"
-      :key="section"
-      :section="section"
-      v-for="section in sections" />
+      :key="sectionKey"
+      :sectionKey="sectionKey"
+      v-for="sectionKey in sectionKeys" />
   </div>
 </template>
 
 <script>
-import { Sections } from '../constants.js';
+import { SectionKeys } from '../constants.js';
 import Section from './Section.vue';
 
 export default {
@@ -18,10 +18,10 @@ export default {
     Section,
   },
   data: () => ({
-    sections: Sections,
+    sectionKeys: SectionKeys,
   }),
   props: {
-    section: String,
+    sectionKey: String,
   },
   methods: {
     checkCurrentSection() {
@@ -30,8 +30,8 @@ export default {
         const rect = ref.$el.getBoundingClientRect();
         return rect.bottom > windowMiddle;
       });
-      if (sectionEl && sectionEl.section !== this.section) {
-        this.$emit('changeSection', sectionEl.section);
+      if (sectionEl && sectionEl.sectionKey !== this.sectionKey) {
+        this.$emit('changeSection', sectionEl.sectionKey);
       }
     },
   },

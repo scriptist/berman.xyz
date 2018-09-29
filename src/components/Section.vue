@@ -1,14 +1,18 @@
-<template>
-  <div class="section">
-    <h1>{{section}}</h1>
-  </div>
-</template>
-
 <script>
+import { Sections } from '../constants.js';
+
 export default {
   name: 'Section',
   props: {
-    section: String,
+    sectionKey: String,
+  },
+  render() {
+    const Content = Sections.get(this.sectionKey);
+    return (
+      <div class="section">
+        <Content />
+      </div>
+    );
   },
 };
 </script>
@@ -20,11 +24,5 @@ export default {
   flex-direction: column;
   justify-content: center;
   padding: 35vh 0 35vh;
-}
-
-h1 {
-  font-family: 'Quattrocento', sans-serif;
-  font-weight: 300;
-  margin: 0;
 }
 </style>

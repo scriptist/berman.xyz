@@ -8,7 +8,7 @@
 <script>
 import SupportingImage from './components/SupportingImage.vue';
 import Content from './components/Content.vue';
-import { Sections } from './constants.js';
+import { SectionKeys } from './constants.js';
 
 const mobileMediaQuery = window.matchMedia('(max-width: 550px)');
 
@@ -20,7 +20,7 @@ export default {
   },
   data: () => ({
     mobile: false,
-    section: Sections[0],
+    section: SectionKeys[0],
   }),
   methods: {
     handleChangeSection(section) {
@@ -41,6 +41,7 @@ export default {
 </script>
 
 <style lang="scss">
+// Reset
 * {
   box-sizing: border-box;
 }
@@ -59,9 +60,17 @@ select,
 button {
   font: inherit;
 }
+
+// Global styles
+h1 {
+  font-family: 'Quattrocento', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
 </style>
 
 <style lang="scss" scoped>
+// Layout
 #app {
   font-family: 'Merriweather Sans', sans-serif;
 }

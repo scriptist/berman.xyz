@@ -10,7 +10,7 @@ import SupportingImage from './components/SupportingImage.vue';
 import Content from './components/Content.vue';
 import { SectionKeys } from './constants.js';
 
-const mobileMediaQuery = window.matchMedia('(max-width: 550px)');
+const mobileMediaQuery = window.matchMedia ? '(max-width: 550px)' : null;
 
 export default {
   name: 'App',
@@ -31,10 +31,12 @@ export default {
     },
   },
   created() {
+    if (!mobileMediaQuery) return;
     this.testMediaQuery(mobileMediaQuery);
     mobileMediaQuery.addListener(this.testMediaQuery);
   },
   destroyed() {
+    if (!mobileMediaQuery) return;
     mobileMediaQuery.removeListener(this.testMediaQuery);
   },
 };

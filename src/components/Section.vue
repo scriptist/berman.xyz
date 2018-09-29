@@ -19,10 +19,6 @@ export default {
 
 <style scoped lang="scss">
 .section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 35vh 0 35vh;
+  padding: 35vh 32px 35vh;
 }
 </style>

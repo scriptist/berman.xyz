@@ -7,7 +7,7 @@ export default {
     sectionKey: String,
   },
   render() {
-    const Content = Sections.get(this.sectionKey);
+    const Content = Sections.get(this.sectionKey).content;
     return (
       <div class="section">
         <Content />

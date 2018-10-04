@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <SupportingImage class="image" :section="section" v-if="!mobile" />
-    <Content class="content" :section="section" @changeSection="handleChangeSection" />
+    <SupportingImage class="image" :sectionKey="sectionKey" v-if="!mobile" />
+    <Content class="content" :sectionKey="sectionKey" @changeSection="handleChangeSection" />
   </div>
 </template>
 
@@ -10,7 +10,9 @@ import SupportingImage from './components/SupportingImage.vue';
 import Content from './components/Content.vue';
 import { SectionKeys } from './constants.js';
 
-const mobileMediaQuery = window.matchMedia ? '(max-width: 550px)' : null;
+const mobileMediaQuery = window.matchMedia
+  ? window.matchMedia('(max-width: 550px)')
+  : null;
 
 export default {
   name: 'App',
@@ -20,11 +22,11 @@ export default {
   },
   data: () => ({
     mobile: false,
-    section: SectionKeys[0],
+    sectionKey: SectionKeys[0],
   }),
   methods: {
-    handleChangeSection(section) {
-      this.section = section;
+    handleChangeSection(sectionKey) {
+      this.sectionKey = sectionKey;
     },
     testMediaQuery(e) {
       this.mobile = e.matches;

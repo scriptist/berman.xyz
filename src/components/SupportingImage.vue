@@ -1,25 +1,28 @@
-<template>
-  <div class="root">
-      <img
-        class="layer"
-        :key="layer"
-        :src="`/layers/${layer}.png`"
-        v-for="layer in layers" />
-  </div>
-</template>
-
 <script>
-import { SectionKeys } from '../constants.js';
+import { Sections, SectionKeys } from '../constants.js';
 
 export default {
   name: 'SupportingImage',
   props: {
-    section: String,
+    sectionKey: String,
   },
   computed: {
     layers() {
-      return SectionKeys.slice(0, SectionKeys.indexOf(this.section) + 1);
+      const keys = SectionKeys.slice(
+        0,
+        SectionKeys.indexOf(this.sectionKey) + 1,
+      );
+      return keys.map(key => Sections.get(key).image);
     },
+  },
+  render() {
+    return (
+      <div class="root">
+        {this.layers.map((Layer, i) => (
+          <Layer class="layer" key={i} />
+        ))}
+      </div>
+    );
   },
 };
 </script>
@@ -37,5 +40,25 @@ export default {
   width: 100%;
   max-width: 500px;
   transform: translate(-50%, -50%);
+}
+</style>
+
+<style lang="scss">
+.layer {
+  .stroke {
+    fill: none;
+    stroke: #7f7f7f;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+  }
+
+  .fill {
+    fill: #7f7f7f;
+  }
+
+  .fill-bg {
+    fill: #fcdbdb;
+  }
 }
 </style>

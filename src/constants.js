@@ -16,6 +16,7 @@ export const Sections = new Map([
   [
     'WELCOME',
     {
+      color: '#eb8d4e',
       content: WelcomeSection,
       image: WelcomeImage,
     },
@@ -23,6 +24,7 @@ export const Sections = new Map([
   [
     'EXPERIENCE',
     {
+      color: 'orange',
       content: ExperienceSection,
       image: ExperienceImage,
     },
@@ -30,6 +32,7 @@ export const Sections = new Map([
   [
     'WORK',
     {
+      color: '#eb8d4e',
       content: WorkSection,
       image: WorkImage,
     },
@@ -37,6 +40,7 @@ export const Sections = new Map([
   [
     'FTIC',
     {
+      color: 'orange',
       content: FTICSection,
       image: FTICImage,
     },
@@ -44,6 +48,7 @@ export const Sections = new Map([
   [
     'CONTACT',
     {
+      color: '#eb8d4e',
       content: ContactSection,
       image: ContactImage,
     },

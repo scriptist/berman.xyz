@@ -1,10 +1,14 @@
 <script>
 import { Sections, SectionKeys } from '../constants.js';
+import Vue from 'vue';
 
 export default {
   name: 'SupportingImage',
   props: {
     sectionKey: String,
+  },
+  data: function() {
+    return { style: this.calculateStyle() };
   },
   computed: {
     layers() {
@@ -15,10 +19,31 @@ export default {
       return keys.map(key => Sections.get(key).image);
     },
   },
+  methods: {
+    calculateStyle() {
+      const background = Sections.get(this.sectionKey).color;
+      return `
+          .supporting-image {
+            background-color: ${background};
+          }
+          .layer .fill-bg {
+            fill: ${background};
+          }
+        `;
+    },
+  },
+  watch: {
+    sectionKey() {
+      setTimeout(() => (this.style = this.calculateStyle()), 50);
+    },
+  },
   render() {
+    const { background, layers, style } = this;
+
     return (
-      <div class="root">
-        {this.layers.map((Layer, i) => (
+      <div class="supporting-image">
+        <style>{style}</style>
+        {layers.map((Layer, i) => (
           <Layer class="layer" key={i} />
         ))}
       </div>
@@ -28,9 +53,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.root {
+.supporting-image {
+  // Background defined in component
   text-align: center;
   position: relative;
+  transition: background-color 0.5s;
 }
 
 .layer {
@@ -58,7 +85,8 @@ export default {
   }
 
   .fill-bg {
-    fill: #fcdbdb;
+    // Fill defined in component
+    transition: fill 0.5s;
   }
 }
 </style>

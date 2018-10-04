@@ -80,7 +80,6 @@ h1 {
 }
 
 .image {
-  background-color: #eb8d4e;
   bottom: 0;
   left: 0;
   position: fixed;

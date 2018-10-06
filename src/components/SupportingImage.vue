@@ -1,6 +1,5 @@
 <script>
 import { Sections, SectionKeys } from '../constants.js';
-import Vue from 'vue';
 
 export default {
   name: 'SupportingImage',
@@ -38,7 +37,7 @@ export default {
     },
   },
   render() {
-    const { background, layers, style } = this;
+    const { layers, style } = this;
 
     return (
       <div class="supporting-image">
@@ -74,14 +73,14 @@ export default {
 .layer {
   .stroke {
     fill: none;
-    stroke: #7f7f7f;
+    stroke: #fff;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 2px;
   }
 
   .fill {
-    fill: #7f7f7f;
+    fill: #fff;
   }
 
   .fill-bg {

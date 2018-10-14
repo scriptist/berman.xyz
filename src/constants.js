@@ -12,6 +12,21 @@ import FTICImage from './assets/layers/FTIC.svg';
 import WelcomeImage from './assets/layers/Welcome.svg';
 import WorkImage from './assets/layers/Work.svg';
 
+export const Months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
+
 export const Sections = new Map([
   [
     'WELCOME',

@@ -1,6 +1,7 @@
 <template>
   <div class="welcome">
-    <h1>Welcome</h1>
+    <h1>Mike Berman</h1>
+    <h2>Front end web developer</h2>
   </div>
 </template>
 

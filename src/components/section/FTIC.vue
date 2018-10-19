@@ -1,6 +1,5 @@
 <template>
   <div class="ftic">
-    <h1>FTIC</h1>
   </div>
 </template>
 

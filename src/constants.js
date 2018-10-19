@@ -12,6 +12,12 @@ import FTICImage from './assets/layers/FTIC.svg';
 import WelcomeImage from './assets/layers/Welcome.svg';
 import WorkImage from './assets/layers/Work.svg';
 
+// Images
+import ContactIcon from './assets/icons/Contact.svg';
+import ExperienceIcon from './assets/icons/Experience.svg';
+import FTICIcon from './assets/icons/FTIC.svg';
+import WorkIcon from './assets/icons/Work.svg';
+
 export const Months = [
   'Jan',
   'Feb',
@@ -34,6 +40,7 @@ export const Sections = new Map([
       color: '#eb8d4e',
       content: WelcomeSection,
       image: WelcomeImage,
+      title: 'Mike Berman',
     },
   ],
   [
@@ -41,7 +48,9 @@ export const Sections = new Map([
     {
       color: 'orange',
       content: ExperienceSection,
+      icon: ExperienceIcon,
       image: ExperienceImage,
+      title: 'Experience',
     },
   ],
   [
@@ -49,7 +58,9 @@ export const Sections = new Map([
     {
       color: '#eb8d4e',
       content: WorkSection,
+      icon: WorkIcon,
       image: WorkImage,
+      title: 'Work',
     },
   ],
   [
@@ -57,7 +68,9 @@ export const Sections = new Map([
     {
       color: 'orange',
       content: FTICSection,
+      icon: FTICIcon,
       image: FTICImage,
+      title: 'Find the Invisible Cow',
     },
   ],
   [
@@ -65,7 +78,9 @@ export const Sections = new Map([
     {
       color: '#eb8d4e',
       content: ContactSection,
+      icon: ContactIcon,
       image: ContactImage,
+      title: 'Contact',
     },
   ],
 ]);

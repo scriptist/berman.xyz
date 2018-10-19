@@ -1,6 +1,5 @@
 <template>
   <div class="experience">
-    <h1>Experience</h1>
     <Company
       name="Facebook"
       :from="new Date(2017, 6)"

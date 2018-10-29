@@ -6,20 +6,8 @@ export default {
   props: {
     sectionKey: String,
   },
-  data: function() {
-    return { style: this.calculateStyle() };
-  },
   computed: {
-    layers() {
-      const keys = SectionKeys.slice(
-        0,
-        SectionKeys.indexOf(this.sectionKey) + 1,
-      );
-      return keys.map(key => Sections.get(key).image);
-    },
-  },
-  methods: {
-    calculateStyle() {
+    style() {
       const background = Sections.get(this.sectionKey).color;
       return `
           .supporting-image {
@@ -31,20 +19,17 @@ export default {
         `;
     },
   },
-  watch: {
-    sectionKey() {
-      setTimeout(() => (this.style = this.calculateStyle()), 50);
-    },
-  },
   render() {
-    const { layers, style } = this;
+    const { style } = this;
+    const sectionIndex = SectionKeys.indexOf(this.sectionKey);
 
     return (
       <div class="supporting-image">
         <style>{style}</style>
-        {layers.map((Layer, i) => (
-          <Layer class="layer" key={i} />
-        ))}
+        {SectionKeys.map((key, i) => {
+          const Layer = Sections.get(key).image;
+          return <Layer class="layer" visible={i <= sectionIndex} />;
+        })}
       </div>
     );
   },
@@ -54,18 +39,20 @@ export default {
 <style scoped lang="scss">
 .supporting-image {
   // Background defined in component
-  text-align: center;
+  overflow: hidden;
   position: relative;
+  text-align: center;
   transition: background-color 0.5s;
 }
 
 .layer {
-  position: absolute;
-  top: 40%;
   left: 50%;
-  width: 100%;
+  margin-left: -50%;
+  margin-top: -50%;
   max-width: 500px;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 30%;
+  width: 100%;
 }
 </style>
 

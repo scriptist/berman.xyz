@@ -6,13 +6,13 @@ import WelcomeSection from './components/section/Welcome.vue';
 import WorkSection from './components/section/Work.vue';
 
 // Images
-import ContactImage from './assets/layers/Contact.svg';
-import FTICImage from './assets/layers/FTIC.svg';
-import SkillsImage from './assets/layers/Skills.svg';
-import WelcomeImage from './assets/layers/Welcome.svg';
-import WorkImage from './assets/layers/Work.svg';
+import ContactImage from './components/supporting-image/Contact.vue';
+import FTICImage from './components/supporting-image/FTIC.vue';
+import SkillsImage from './components/supporting-image/Skills.vue';
+import WelcomeImage from './components/supporting-image/Welcome.vue';
+import WorkImage from './components/supporting-image/Work.vue';
 
-// Images
+// Icons
 import ContactIcon from './assets/icons/Contact.svg';
 import FTICIcon from './assets/icons/FTIC.svg';
 import SkillsIcon from './assets/icons/Skills.svg';

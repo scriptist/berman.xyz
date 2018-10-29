@@ -1,5 +1,12 @@
 <template>
   <div class="contact">
+    <p>
+      I&apos;m currently living in London, though I'm open to opportunities
+      across the globe.
+    </p>
+    <p>
+      Email me at <a href="mailto:mike@berman.xyz">mike@berman.xyz</a>.
+    </p>
   </div>
 </template>
 

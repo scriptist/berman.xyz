@@ -24,6 +24,10 @@ export default {
 
 <style scoped lang="scss">
 .section {
-  padding: 35vh 32px 35vh;
+  padding: 25vh 32px 25vh;
+
+  &:nth-child(odd) {
+    background: #ddd;
+  }
 }
 </style>

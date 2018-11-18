@@ -66,10 +66,22 @@ button {
 }
 
 // Global styles
-h1 {
+h1,
+h2,
+h3 {
   font-family: 'Quattrocento', sans-serif;
   font-weight: 300;
   margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p,
+ul,
+ol {
+  line-height: 1.5;
 }
 </style>
 

@@ -8,14 +8,14 @@
     <p>
       A few months later I was browsing Reddit when I came across my very own
       game on the front page! It received over a million hits that week, and
-      since then has received publicity on CNET, Buzzfeed, and TODO: finish this
-      sentence.
+      since then has received publicity on CNN, Mashable, Buzfeed, and countless
+      other "news" sources.
     </p>
     <p>
-      Since the game's inception, x,xxx,xxx invisible cows have been found by
-      x,xxx,xxx unique players.
+      Since the game's inception, 29,000,000 invisible cows have been found by
+      9,500,000 unique players.
     </p>
-    <a href="" target="_blank">Find The Invisible Cow</a>
+    <a class="button" href="https://findtheinvisiblecow.com/" target="_blank">Find The Invisible Cow</a>
   </div>
 </template>
 
@@ -27,5 +27,26 @@ export default {
 
 <style scoped lang="scss">
 .ftic {
+  .button {
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 5px 0 #ccc;
+    color: black;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      background: #e5e5e5;
+      box-shadow: 0 4px 0 #ccc;
+      transform: translateY(1px);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 #ccc;
+      transform: translateY(5px);
+    }
+  }
 }
 </style>

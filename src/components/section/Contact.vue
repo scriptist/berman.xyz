@@ -18,5 +18,13 @@ export default {
 
 <style scoped lang="scss">
 .contact {
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 </style>

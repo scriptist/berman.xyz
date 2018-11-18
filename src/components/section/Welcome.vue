@@ -1,6 +1,7 @@
 <template>
   <div class="welcome">
-    <h2>Front end web developer</h2>
+    <h1>Mike Berman</h1>
+    <h3>Front end web developer</h3>
   </div>
 </template>
 
@@ -12,5 +13,14 @@ export default {
 
 <style scoped lang="scss">
 .welcome {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+
+  h1 {
+    font-size: 42px;
+  }
 }
 </style>

@@ -40,7 +40,7 @@ export const Sections = new Map([
       color: '#E54849',
       content: WelcomeSection,
       image: WelcomeImage,
-      title: 'Mike Berman',
+      title: null,
     },
   ],
   [

@@ -43,6 +43,8 @@ export default {
 <style scoped lang="scss">
 .section {
   background: #aaa;
+  display: flex;
+  flex-direction: column;
   min-height: 60vh;
   opacity: 0.2;
   padding: 10vh 32px 10vh;

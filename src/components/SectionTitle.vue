@@ -12,11 +12,16 @@ export default {
     },
   },
   render() {
-    const Icon = this.section.icon;
+    const { icon: Icon, title } = this.section;
+
+    if (title == null) {
+      return null;
+    }
+
     return (
       <h1 class="section-title">
         <Icon class="section-icon" />
-        {this.section.title}
+        {title}
       </h1>
     );
   },

@@ -2,9 +2,10 @@
   <div class="content" ref="content">
     <Section
       ref="section"
-      :key="sectionKey"
-      :sectionKey="sectionKey"
-      v-for="sectionKey in sectionKeys" />
+      :current="key === sectionKey"
+      :key="key"
+      :sectionKey="key"
+      v-for="key in sectionKeys" />
   </div>
 </template>
 

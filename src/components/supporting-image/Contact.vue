@@ -18,11 +18,11 @@ export default {
 
 <style scoped lang="scss">
 .image {
-  transform: translate(60%, 100%) scale(2);
+  transform: translate3d(60%, 0, 800px);
   transition: transform 0.5s;
 
   &.visible {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 </style>

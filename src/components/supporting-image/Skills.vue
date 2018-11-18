@@ -18,11 +18,14 @@ export default {
 
 <style scoped lang="scss">
 .image {
-  transform: translate(20%, -100%);
-  transition: transform 0.5s;
+  transform: rotateX(-120deg);
+  transition: transform 0.5s, opacity 0.2s;
+  transform-origin: top center;
+  opacity: 0;
 
   &.visible {
-    transform: translate(0, 0);
+    transform: rotateX(0);
+    opacity: 1;
   }
 }
 </style>

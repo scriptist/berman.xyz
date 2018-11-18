@@ -40,6 +40,7 @@ export default {
 .supporting-image {
   // Background defined in component
   overflow: hidden;
+  perspective: 1000px;
   position: relative;
   text-align: center;
   transition: background-color 0.5s;

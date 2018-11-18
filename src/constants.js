@@ -37,7 +37,7 @@ export const Sections = new Map([
   [
     'WELCOME',
     {
-      color: '#eb8d4e',
+      color: '#E54849',
       content: WelcomeSection,
       image: WelcomeImage,
       title: 'Mike Berman',
@@ -46,7 +46,7 @@ export const Sections = new Map([
   [
     'SKILLS',
     {
-      color: 'orange',
+      color: '#DE9D36',
       content: SkillsSection,
       icon: SkillsIcon,
       image: SkillsImage,
@@ -56,7 +56,7 @@ export const Sections = new Map([
   [
     'WORK',
     {
-      color: '#eb8d4e',
+      color: '#729974',
       content: WorkSection,
       icon: WorkIcon,
       image: WorkImage,
@@ -66,7 +66,7 @@ export const Sections = new Map([
   [
     'FTIC',
     {
-      color: 'orange',
+      color: '#AB58A4',
       content: FTICSection,
       icon: FTICIcon,
       image: FTICImage,
@@ -76,7 +76,7 @@ export const Sections = new Map([
   [
     'CONTACT',
     {
-      color: '#eb8d4e',
+      color: '#002D40',
       content: ContactSection,
       icon: ContactIcon,
       image: ContactImage,

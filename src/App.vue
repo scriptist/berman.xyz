@@ -8,7 +8,7 @@
 <script>
 import SupportingImage from './components/SupportingImage.vue';
 import Content from './components/Content.vue';
-import { SectionKeys } from './constants.js';
+import { Sections, SectionKeys } from './constants.js';
 
 const mobileMediaQuery = window.matchMedia
   ? window.matchMedia('(max-width: 550px)')
@@ -26,7 +26,13 @@ export default {
   }),
   methods: {
     handleChangeSection(sectionKey) {
-      this.sectionKey = sectionKey;
+      const section = Sections.get(sectionKey);
+      if (section) {
+        this.sectionKey = sectionKey;
+        document.title = `Mike Berman${
+          section.title ? ` 🔹 ${section.title}` : ''
+        }`;
+      }
     },
     testMediaQuery(e) {
       this.mobile = e.matches;

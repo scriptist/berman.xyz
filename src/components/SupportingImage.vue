@@ -49,10 +49,15 @@ export default {
   left: 50%;
   margin-left: -50%;
   margin-top: -50%;
-  max-width: 500px;
   position: absolute;
   top: 30%;
   width: 100%;
+
+  @media screen and (min-width: 1000px) {
+    margin-left: -250px;
+    margin-top: -250px;
+    width: 500px;
+  }
 }
 </style>
 

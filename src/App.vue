@@ -80,6 +80,10 @@ h3 {
   margin: 0;
 }
 
+h1 {
+  margin-bottom: 16px;
+}
+
 h3 {
   text-transform: uppercase;
 }

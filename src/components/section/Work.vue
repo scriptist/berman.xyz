@@ -5,7 +5,6 @@
       :from="new Date(2017, 6)"
     >
       <li>Working on Collaboration Engineering team to improve meeting efficiency</li>
-      <li>...</li>
     </Company>
     <Company
       name="IRESS"
@@ -38,6 +37,7 @@
     </Company>
     <Company
       name="Westfield Labs"
+      contract
       :from="new Date(2014, 10)"
       :to="new Date(2015, 2)"
     >
@@ -62,6 +62,7 @@
       :to="new Date(2014, 7)"
     >
       <li>Built internal tool featuring a chat bot that would help schedule company &amp; social events from within HipChat</li>
+      <li>Despite interviewing as a front end developer, the team I joined was expecting a Java dev, so I left after it became clear I wouldn't be able to be productive in my team or transfer to a more suitable team</li>
     </Company>
     <Company
       name="Nearmap"

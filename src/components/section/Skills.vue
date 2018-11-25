@@ -49,5 +49,9 @@ export default {
   .col {
     flex: 1 0 0;
   }
+
+  @media screen and (max-width: 850px) {
+    display: block;
+  }
 }
 </style>

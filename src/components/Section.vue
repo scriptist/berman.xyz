@@ -32,8 +32,8 @@ export default {
         class={`section ${this.current ? 'current' : ''}`}
         style={{ backgroundColor }}
       >
-        <SectionTitle sectionKey={this.sectionKey} />
-        <Content />
+        <SectionTitle class="title" sectionKey={this.sectionKey} />
+        <Content class="content" />
       </div>
     );
   },
@@ -49,7 +49,8 @@ export default {
   opacity: 0.2;
   padding: 10vh 32px 10vh;
   position: relative;
-  transition: background-color 0.5s, opacity 0.5s;
+  transition-duration: 0.5s;
+  transition-property: background, opacity, transform;
 
   &.current {
     opacity: 1;
@@ -58,6 +59,24 @@ export default {
   &:first-child,
   &:last-child {
     min-height: 80vh;
+  }
+
+  .title,
+  .content {
+    transition: transform 0.5s;
+  }
+
+  .title {
+    transform: translateX(20px);
+  }
+
+  .content {
+    transform: translateX(10px);
+  }
+
+  &.current .title,
+  &.current .content {
+    transform: translateX(0);
   }
 }
 </style>

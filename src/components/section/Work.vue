@@ -5,6 +5,8 @@
       :from="new Date(2017, 6)"
     >
       <li>Working on Collaboration Engineering team to improve meeting efficiency</li>
+      <li>Built several applications to be run on touchscreen devices throughout the company's offices</li>
+      <li>Won an award for efficiency improvements and presented work in front of the CEO &amp; several thousand co-workers</li>
     </Company>
     <Company
       name="IRESS"
@@ -12,7 +14,6 @@
       :from="new Date(2016, 10)"
       :to="new Date(2017, 1)"
     >
-      <li>3 month contract &mdash; offered permanent position</li>
       <li>Helped ship version 1.0 of PRIME, a CRM tool for financial planners</li>
     </Company>
     <Company
@@ -21,7 +22,7 @@
       :from="new Date(2016, 2)"
       :to="new Date(2016, 9)"
     >
-      <li>3 month contract with multiple extensions - offered permanent position</li>
+      <li>3 month contract with multiple extensions</li>
       <li>Lead developer on a project to rebuild Holler's website using React</li>
       <li>Led the switch from gulp to webpack</li>
       <li>Introduced code reviees &amp; pull requests to improve reliability</li>
@@ -41,7 +42,6 @@
       :from="new Date(2014, 10)"
       :to="new Date(2015, 2)"
     >
-      <li>3 month contract &mdash; offered extension &amp; permanent position</li>
       <li>Contributed to the redevelopment of UK, US, and Australian websites</li>
       <li>Worked closely with an international team, including designers &amp; developer in Australia, USA, and Argentina</li>
     </Company>
@@ -51,7 +51,6 @@
       :from="new Date(2014, 7)"
       :to="new Date(2014, 10)"
     >
-      <li>3 month contract &mdash; offered extension</li>
       <li>Developed many JS heavy webapps including a canvas beer label designer for internal use at Lion Nathan</li>
       <li>Rebuilt White Agency website with GSAP transitions &amp; HTML5 history API</li>
       <li>Led the introduction of a new toolchain (including Gulp, SASS, Compass, JSHint)</li>
@@ -70,7 +69,7 @@
       :from="new Date(2013, 5)"
       :to="new Date(2014, 4)"
     >
-      <li>Originally a 3 month contract, was extended multiple times</li>
+      <li>3 month contract with multiple extensions</li>
       <li>Led a project to rebuild the company's primary product, a map browser, from the ground up in order to improve ease-of-use and reduce technical debt</li>
       <li>Worked on UX, design, and front end development</li>
       <li>Built new sales site specifically for select industries, and rebuilt main sales site</li>

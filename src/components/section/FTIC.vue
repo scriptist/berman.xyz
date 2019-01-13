@@ -47,6 +47,10 @@ export default {
       box-shadow: 0 0 0 #ccc;
       transform: translateY(5px);
     }
+
+    @media print {
+      display: none;
+    }
   }
 }
 </style>

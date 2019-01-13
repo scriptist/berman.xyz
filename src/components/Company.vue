@@ -42,6 +42,7 @@ export default {
 <style scoped lang="scss">
 .company {
   display: flex;
+  page-break-inside: avoid;
 
   &:not(:last-child) {
     margin-bottom: 48px;
@@ -61,12 +62,20 @@ export default {
     li:not(:last-child) {
       margin-bottom: 8px;
     }
+
+    @media print {
+      color: inherit;
+    }
   }
 
   .name {
     color: #474;
     font-size: 1.25em;
     margin-bottom: 8px;
+
+    @media print {
+      color: inherit;
+    }
   }
 
   .dates {
@@ -83,6 +92,12 @@ export default {
     display: inline-block;
     font-size: 0.75em;
     padding: 3px 6px;
+
+    @media print {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
   }
 
   @media screen and (max-width: 850px) {

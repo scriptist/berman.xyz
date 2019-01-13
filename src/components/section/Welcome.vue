@@ -22,6 +22,7 @@ export default {
   flex-direction: column;
   flex-grow: 1;
   justify-content: center;
+  text-align: center;
 
   .logo {
     height: 64px;

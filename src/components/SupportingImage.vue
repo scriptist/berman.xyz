@@ -44,6 +44,10 @@ export default {
   position: relative;
   text-align: center;
   transition: background-color 0.5s;
+
+  @media print {
+    display: none;
+  }
 }
 
 .layer {

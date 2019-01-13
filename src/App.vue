@@ -83,6 +83,10 @@ h3 {
 
 h1 {
   margin-bottom: 16px;
+
+  @media print {
+    margin-bottom: 0;
+  }
 }
 
 h3 {
@@ -116,5 +120,9 @@ ol {
 
 .image + .content {
   padding-left: 50vw;
+
+  @media print {
+    padding-left: 0;
+  }
 }
 </style>

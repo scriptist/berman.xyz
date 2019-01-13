@@ -59,6 +59,10 @@ export default {
   &:first-child,
   &:last-child {
     min-height: 80vh;
+
+    @media print {
+      min-height: 0;
+    }
   }
 
   .title,
@@ -68,15 +72,34 @@ export default {
 
   .title {
     transform: translateX(20px);
+
+    @media print {
+      transform: none;
+    }
   }
 
   .content {
     transform: translateX(10px);
+
+    @media print {
+      transform: none;
+    }
   }
 
   &.current .title,
   &.current .content {
     transform: translateX(0);
+  }
+
+  @media print {
+    background: none !important;
+    min-height: 0;
+    opacity: 1;
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 }
 </style>

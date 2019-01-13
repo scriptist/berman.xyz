@@ -50,8 +50,16 @@ export default {
     flex: 1 0 0;
   }
 
+  ul:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (max-width: 850px) {
     display: block;
+
+    .col:not(:first-child) {
+      margin-top: 20px;
+    }
   }
 }
 </style>

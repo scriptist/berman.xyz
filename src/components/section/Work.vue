@@ -6,7 +6,7 @@
     >
       <li>Working on Collaboration Engineering team to improve meeting efficiency</li>
       <li>Built several applications to be run on touchscreen devices throughout the company's offices</li>
-      <li>Won an award for efficiency improvements and presented work in front of the CEO &amp; several thousand co-workers</li>
+      <li>Won an award for efficiency improvements and delivered a presentation to the CEO &amp; several thousand co-workers</li>
     </Company>
     <Company
       name="IRESS"

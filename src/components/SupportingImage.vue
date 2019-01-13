@@ -49,14 +49,14 @@ export default {
 .layer {
   left: 50%;
   margin-left: -50%;
-  margin-top: -50%;
+  margin-top: -110%;
   position: absolute;
-  top: 30%;
+  top: 70%;
   width: 100%;
 
   @media screen and (min-width: 1000px) {
     margin-left: -250px;
-    margin-top: -250px;
+    margin-top: -550px;
     width: 500px;
   }
 }

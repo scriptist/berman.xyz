@@ -77,6 +77,7 @@ h2,
 h3 {
   font-family: 'Quattrocento', sans-serif;
   font-weight: 300;
+  letter-spacing: 0.05em;
   margin: 0;
 }
 

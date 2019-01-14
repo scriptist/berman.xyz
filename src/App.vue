@@ -77,7 +77,6 @@ h2,
 h3 {
   font-family: 'Quattrocento', sans-serif;
   font-weight: 300;
-  letter-spacing: 0.05em;
   margin: 0;
 }
 
@@ -90,6 +89,7 @@ h1 {
 }
 
 h3 {
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 

@@ -4,9 +4,10 @@
       name="Facebook"
       :from="new Date(2017, 6)"
     >
-      <li>Working on Collaboration Engineering team to improve meeting efficiency</li>
-      <li>Built several applications to be run on touchscreen devices throughout the company's offices</li>
-      <li>Won an award for efficiency improvements and delivered a presentation to the CEO &amp; several thousand co-workers</li>
+      <li>Tech lead on Portal for Work team, aiming to bring Facebook's video conferencing hardware to external companies</li>
+      <li>Overseeing delivery of multiple major projects working with design, project management and dozens of developers across multiple teams</li>
+      <li>Organised and hosted company-wide conference for front-end developers</li>
+      <li>Won an award for efficiency improvements and delivered a presentation to the CEO, CFO &amp; thousands of co-workers</li>
     </Company>
     <Company
       name="IRESS"

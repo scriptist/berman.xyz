@@ -46,10 +46,14 @@ export default {
 
   &:not(:last-child) {
     margin-bottom: 48px;
+
+    @media print {
+      margin-bottom: 36px;
+    }
   }
 
   .left {
-    flex: 1 0 100px;
+    flex: 1 0 6.25rem;
   }
 
   .right {

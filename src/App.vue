@@ -56,6 +56,12 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  @media print {
+    font-size: 14px;
+  }
+}
+
 body {
   margin: 0;
 }

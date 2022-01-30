@@ -26,7 +26,7 @@
       <li>3 month contract with multiple extensions</li>
       <li>Lead developer on a project to rebuild Holler's website using React</li>
       <li>Led the switch from gulp to webpack</li>
-      <li>Introduced code reviees &amp; pull requests to improve reliability</li>
+      <li>Introduced code reviews &amp; pull requests to improve reliability</li>
     </Company>
     <Company
       name="StageMe"

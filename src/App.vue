@@ -10,9 +10,7 @@ import SupportingImage from './components/SupportingImage.vue';
 import Content from './components/Content.vue';
 import { Sections, SectionKeys } from './constants.js';
 
-const mobileMediaQuery = window.matchMedia
-  ? window.matchMedia('(max-width: 550px)')
-  : null;
+const mobileMediaQuery = window.matchMedia ? window.matchMedia('(max-width: 550px)') : null;
 
 export default {
   name: 'App',
@@ -29,9 +27,7 @@ export default {
       const section = Sections.get(sectionKey);
       if (section) {
         this.sectionKey = sectionKey;
-        document.title = `Mike Berman${
-          section.title ? ` 🔹 ${section.title}` : ''
-        }`;
+        document.title = `Mike Berman${section.title ? ` 🔹 ${section.title}` : ''}`;
       }
     },
     testMediaQuery(e) {

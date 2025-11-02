@@ -2,11 +2,9 @@
   <div class="company">
     <div class="left">
       <div class="name">
-        {{name}}
+        {{ name }}
       </div>
-      <div class="dates">
-        {{formatDate(from)}} &ndash; {{formatDate(to)}}<br />
-      </div>
+      <div class="dates">{{ formatDate(from) }} &ndash; {{ formatDate(to) }}<br /></div>
       <div class="freelance" v-if="contract">Freelance</div>
     </div>
     <div class="right">

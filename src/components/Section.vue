@@ -2,7 +2,7 @@
 import { Sections } from '../constants.js';
 import SectionTitle from './SectionTitle.vue';
 
-const hexToRgb = hex => {
+const hexToRgb = (hex) => {
   const bigint = parseInt(hex.substr(1), 16);
   const r = (bigint >> 16) & 255;
   const g = (bigint >> 8) & 255;
@@ -23,15 +23,10 @@ export default {
   render() {
     const section = Sections.get(this.sectionKey);
     const Content = section.content;
-    const backgroundColor = this.current
-      ? `rgba(${hexToRgb(section.color)}, .5)`
-      : '';
+    const backgroundColor = this.current ? `rgba(${hexToRgb(section.color)}, .5)` : '';
 
     return (
-      <div
-        class={`section ${this.current ? 'current' : ''}`}
-        style={{ backgroundColor }}
-      >
+      <div class={`section ${this.current ? 'current' : ''}`} style={{ backgroundColor }}>
         <SectionTitle class="title" sectionKey={this.sectionKey} />
         <Content class="content" />
       </div>

@@ -5,7 +5,8 @@
       :current="key === sectionKey"
       :key="key"
       :sectionKey="key"
-      v-for="key in sectionKeys" />
+      v-for="key in sectionKeys"
+    />
   </div>
 </template>
 
@@ -27,7 +28,7 @@ export default {
   methods: {
     checkCurrentSection() {
       const windowMiddle = window.innerHeight / 2;
-      const sectionEl = this.$refs.section.find(ref => {
+      const sectionEl = this.$refs.section.find((ref) => {
         const rect = ref.$el.getBoundingClientRect();
         return rect.bottom > windowMiddle;
       });

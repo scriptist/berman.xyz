@@ -19,7 +19,9 @@ export default {
 <style scoped lang="scss">
 .image {
   transform: rotateX(-120deg);
-  transition: transform 0.5s, opacity 0.2s;
+  transition:
+    transform 0.5s,
+    opacity 0.2s;
   transform-origin: top center;
   opacity: 0;
 

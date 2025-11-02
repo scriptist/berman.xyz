@@ -1,4 +1,4 @@
-<script>
+<script lang="jsx">
 import { Sections, SectionKeys } from '../constants.js';
 
 export default {

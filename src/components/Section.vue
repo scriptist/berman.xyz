@@ -1,4 +1,4 @@
-<script>
+<script lang="jsx">
 import { Sections } from '../constants.js';
 import SectionTitle from './SectionTitle.vue';
 

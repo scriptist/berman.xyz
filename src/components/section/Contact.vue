@@ -2,12 +2,20 @@
   <div class="contact">
     <table>
       <tr>
-        <th>Location:</th>
-        <td>Sydney, Australia</td>
+        <th>Email:</th>
+        <td><a href="mailto:mike@berman.xyz">mike@berman.xyz</a></td>
       </tr>
       <tr>
-        <th>Email:</th>
-        <td> <a href="mailto:mike@berman.xyz">mike@berman.xyz</a></td>
+        <th>LinkedIn:</th>
+        <td><a href="https://www.linkedin.com/in/mikeyberman/" target="_blank">linkedin.com/in/mikeyberman</a></td>
+      </tr>
+      <tr>
+        <th>GitHub:</th>
+        <td><a href="https://github.com/scriptist" target="_blank">github.com/scriptist</a></td>
+      </tr>
+      <tr>
+        <th>Location:</th>
+        <td>Sydney, Australia</td>
       </tr>
     </table>
   </div>

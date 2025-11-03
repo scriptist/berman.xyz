@@ -30,6 +30,8 @@ export default {
 
 <style scoped lang="scss">
 .section-title {
+  align-items: center;
+  display: flex;
 }
 </style>
 

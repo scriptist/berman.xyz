@@ -49,6 +49,10 @@ export default {
   }
 
   ul:last-child {
+    margin-top: 0;
+  }
+
+  ul:last-child {
     margin-bottom: 0;
   }
 

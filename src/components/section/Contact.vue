@@ -1,10 +1,15 @@
 <template>
   <div class="contact">
-    <!-- <p>
-      I&apos;m currently living in London, though I'm open to opportunities
-      across the globe.
-    </p> -->
-    <p>Email me at <a href="mailto:mike@berman.xyz">mike@berman.xyz</a>.</p>
+    <table>
+      <tr>
+        <th>Location:</th>
+        <td>Sydney, Australia</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td> <a href="mailto:mike@berman.xyz">mike@berman.xyz</a></td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -16,6 +21,15 @@ export default {
 
 <style scoped lang="scss">
 .contact {
+  th {
+    padding-right: 16px;
+    text-align: left;
+  }
+
+  th, td {
+    padding-bottom: 12px;
+  }
+
   a {
     color: inherit;
     text-decoration: none;

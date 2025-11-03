@@ -27,6 +27,10 @@ export default {
 
 <style scoped lang="scss">
 .ftic {
+  p:first-child {
+    margin-top: 0;
+  }
+
   .button {
     background: white;
     border-radius: 2px;

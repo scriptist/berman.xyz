@@ -21,10 +21,13 @@ export default {
   max-width: 600px;
 
   ul {
-    line-height: 2;
     list-style: none;
     margin-top: 0;
     padding-left: 0;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 </style>

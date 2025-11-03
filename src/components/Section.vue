@@ -105,7 +105,7 @@ export default {
     padding: 0;
 
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
   }
 }

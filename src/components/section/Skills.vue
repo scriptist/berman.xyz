@@ -1,35 +1,10 @@
 <template>
   <div class="skills">
-    <div class="col">
-      <ul>
-        <li>Frameworks</li>
-        <ul>
-          <li>React</li>
-          <li>Vue.js</li>
-          <li>Webpack</li>
-        </ul>
-        <li>JavaScript</li>
-        <ul>
-          <li>ES6</li>
-          <li>TypeScript</li>
-          <li>Flow</li>
-          <li>Node.js</li>
-        </ul>
-      </ul>
-    </div>
-
-    <div class="col">
-      <ul>
-        <li>CSS</li>
-        <ul>
-          <li>SASS</li>
-          <li>PostCSS</li>
-        </ul>
-        <li>HTML5</li>
-        <li>PHP &amp; Hack</li>
-        <li>Python</li>
-      </ul>
-    </div>
+    <ul>
+      <li><strong>Languages</strong>: JavaScript (ES6), TypeScript, Flow, CSS, PHP, Hack, Python</li>
+      <li><strong>Frameworks &amp; Libraries</strong>: React, Vue.js, Node.js</li>
+      <li><strong>Tooling & Build Systems</strong>: Webpack, Gulp, PostCSS, SASS</li>
+    </ul>
   </div>
 </template>
 
@@ -41,27 +16,13 @@ export default {
 
 <style scoped lang="scss">
 .skills {
-  display: flex;
   max-width: 600px;
 
-  .col {
-    flex: 1 0 0;
-  }
-
-  ul:last-child {
+  ul {
+    line-height: 2;
+    list-style: none;
     margin-top: 0;
-  }
-
-  ul:last-child {
-    margin-bottom: 0;
-  }
-
-  @media screen and (max-width: 850px) {
-    display: block;
-
-    .col:not(:first-child) {
-      margin-top: 20px;
-    }
+    padding-left: 0;
   }
 }
 </style>

@@ -4,23 +4,23 @@
       <li>
         Led the 'Smart Office' team, delivering internal applications (navigation, room management,
         and video conferencing) used by 100k+ employees. Helped define the multi-year technical
-        roadmap and scaled the platform across hundreds of global campuses and data centres.
+        roadmap and scaled the platform across hundreds of global campuses and data centres
       </li>
       <li>
         Drove cross-organizational alignment to deliver VC Panel's first two major versions,
         coordinating ~30 contributors across 3 teams (software, hardware, industrial design, and
         product design). This initiative significantly improved meeting efficiency, compared to the
-        Cisco Navigators we used previously.
+        Cisco Navigators we used previously
       </li>
       <li>
         Organised and hosted company-wide conference for front-end developers for five years,
         growing from 50 to 300 attendees. This became the primary forum for sharing best practices,
-        as well as showcasing new technologies and tools.
+        as well as showcasing new technologies and tools
       </li>
       <li>
         Resolved a key meeting-room efficiency issue, increasing room utilisation by 15%+. This work
         won a company-wide award and I presented it at our company all-hands in front of the CEO,
-        CFO and thousands of colleagues.
+        CFO and thousands of colleagues
       </li>
     </Company>
     <Company name="IRESS" contract :from="new Date(2016, 10)" :to="new Date(2017, 1)">
@@ -63,7 +63,7 @@
       <li>Was the sole front-end developer, building over 50 new websites in 8 months</li>
     </Company>
     <Company name="Radioinfo" :from="new Date(2010, 1)" :to="new Date(2013, 4)">
-      <li>Maintained &amp; updated Django website for two years as their sole developer.</li>
+      <li>Maintained &amp; updated Django website for two years as their sole developer</li>
     </Company>
   </div>
 </template>

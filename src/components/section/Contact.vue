@@ -7,7 +7,11 @@
       </tr>
       <tr>
         <th>LinkedIn:</th>
-        <td><a href="https://www.linkedin.com/in/mikeyberman/" target="_blank">linkedin.com/in/mikeyberman</a></td>
+        <td>
+          <a href="https://www.linkedin.com/in/mikeyberman/" target="_blank"
+            >linkedin.com/in/mikeyberman</a
+          >
+        </td>
       </tr>
       <tr>
         <th>GitHub:</th>
@@ -29,7 +33,6 @@ export default {
 
 <style scoped lang="scss">
 .contact {
-
   table {
     table-layout: fixed;
     width: 100%;
@@ -46,7 +49,8 @@ export default {
     white-space: nowrap;
   }
 
-  th, td {
+  th,
+  td {
     padding-bottom: 12px;
   }
 

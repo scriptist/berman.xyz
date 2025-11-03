@@ -1,7 +1,9 @@
 <template>
   <div class="skills">
     <ul>
-      <li><strong>Languages</strong>: JavaScript (ES6), TypeScript, Flow, CSS, PHP, Hack, Python</li>
+      <li>
+        <strong>Languages</strong>: JavaScript (ES6), TypeScript, Flow, CSS, PHP, Hack, Python
+      </li>
       <li><strong>Frameworks &amp; Libraries</strong>: React, Vue.js, Node.js</li>
       <li><strong>Tooling & Build Systems</strong>: Webpack, Gulp, PostCSS, SASS</li>
     </ul>

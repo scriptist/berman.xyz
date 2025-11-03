@@ -18,9 +18,9 @@
         as well as showcasing new technologies and tools.
       </li>
       <li>
-        Resolved a key meeting-room efficiency issue, increasing room utilisation by 15%+. This
-        work won a company-wide award and I presented it at our company all-hands in front of the
-        CEO, CFO and thousands of colleagues.
+        Resolved a key meeting-room efficiency issue, increasing room utilisation by 15%+. This work
+        won a company-wide award and I presented it at our company all-hands in front of the CEO,
+        CFO and thousands of colleagues.
       </li>
     </Company>
     <Company name="IRESS" contract :from="new Date(2016, 10)" :to="new Date(2017, 1)">
@@ -33,7 +33,10 @@
       <li>Worked directly with the CEO to build customer-facing website</li>
     </Company>
     <Company name="Westfield Labs" contract :from="new Date(2014, 10)" :to="new Date(2015, 2)">
-      <li>Contributed to the redevelopment of UK, US, and Australian websites on Adobe Experience Manager</li>
+      <li>
+        Contributed to the redevelopment of UK, US, and Australian websites on Adobe Experience
+        Manager
+      </li>
     </Company>
     <Company name="The White Agency" contract :from="new Date(2014, 7)" :to="new Date(2014, 10)">
       <li>Led the introduction of a new toolchain (including Gulp, SASS, Compass, JSHint)</li>

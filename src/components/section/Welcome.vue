@@ -5,9 +5,9 @@
     <h3>Staff Front End Engineer</h3>
     <p>
       15+ years of experience driving large-scale application architecture &amp;
-      cross-organisational technical leadership. Proven record of driving multi-year
-      projects, mentoring senior engineers, and shipping high-impact internal tools for
-      100,000+ users at Meta.
+      cross-organisational technical leadership. Proven record of driving multi-year projects,
+      mentoring senior engineers, and shipping high-impact internal tools for 100,000+ users at
+      Meta.
     </p>
   </div>
 </template>

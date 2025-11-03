@@ -5,7 +5,7 @@
         {{ name }}
       </div>
       <div class="dates">{{ formatDate(from) }} &ndash; {{ formatDate(to) }}<br /></div>
-      <div class="freelance" v-if="contract">Freelance</div>
+      <div class="contract" v-if="contract">Contract</div>
     </div>
     <div class="right">
       <slot></slot>
@@ -43,10 +43,10 @@ export default {
   page-break-inside: avoid;
 
   &:not(:last-child) {
-    margin-bottom: 48px;
+    margin-bottom: 36px;
 
     @media print {
-      margin-bottom: 36px;
+      margin-bottom: 24px;
     }
   }
 
@@ -73,21 +73,24 @@ export default {
   .name {
     color: #474;
     font-size: 1.25em;
-    margin-bottom: 8px;
 
     @media print {
       color: inherit;
+      margin-bottom: 4px;
     }
   }
 
   .dates {
-    font-size: 0.875em;
+    font-size: 0.75em;
     line-height: 1.4;
-    margin-bottom: 8px;
     text-transform: uppercase;
+
+    @media print {
+      line-height: 1;
+    }
   }
 
-  .freelance {
+  .contract {
     background: #729974;
     border-radius: 4px;
     color: white;
@@ -102,12 +105,12 @@ export default {
     }
   }
 
-  @media screen and (max-width: 850px) {
+  @media print, screen and (max-width: 1000px) {
     display: block;
 
     .right {
-      margin-left: 0;
-      margin-top: 16px;
+      margin-left: 24px;
+      margin-top: 8px;
     }
   }
 }

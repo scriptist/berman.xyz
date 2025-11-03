@@ -10,7 +10,7 @@ import SupportingImage from './components/SupportingImage.vue';
 import Content from './components/Content.vue';
 import { Sections, SectionKeys } from './constants.js';
 
-const mobileMediaQuery = window.matchMedia ? window.matchMedia('(max-width: 550px)') : null;
+const mobileMediaQuery = window.matchMedia ? window.matchMedia('(max-width: 650px)') : null;
 
 export default {
   name: 'App',

@@ -29,9 +29,21 @@ export default {
 
 <style scoped lang="scss">
 .contact {
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
   th {
-    padding-right: 16px;
     text-align: left;
+    width: 90px;
+  }
+
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   th, td {

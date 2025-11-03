@@ -81,6 +81,18 @@ export default {
     }
   }
 
+  .title + .content {
+    margin-left: 66px;
+
+    @media print {
+      margin-left: 56px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      margin: 0;
+    }
+  }
+
   &.current .title,
   &.current .content {
     transform: translateX(0);

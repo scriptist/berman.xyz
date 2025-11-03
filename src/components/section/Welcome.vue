@@ -2,7 +2,7 @@
   <div class="welcome">
     <Logo class="logo" />
     <h1>Mike Berman</h1>
-    <h3>Senior front end developer</h3>
+    <h3>Staff front end developer</h3>
   </div>
 </template>
 

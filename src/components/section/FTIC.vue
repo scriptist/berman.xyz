@@ -10,7 +10,7 @@
       Mashable, Buzfeed, and from countless other media organisations.
     </p>
     <p>
-      Since the game's inception, 58,000,000 invisible cows have been found by 15,000,000 unique
+      Since the game's inception, 90,000,000 invisible cows have been found by 20,000,000 unique
       players.
     </p>
     <a class="button" href="https://findtheinvisiblecow.com/" target="_blank"

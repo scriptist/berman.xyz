@@ -50,7 +50,7 @@ export const Sections = new Map([
       content: SkillsSection,
       icon: SkillsIcon,
       image: SkillsImage,
-      title: 'Skills',
+      title: 'Technical Skills',
     },
   ],
   [
@@ -60,7 +60,7 @@ export const Sections = new Map([
       content: WorkSection,
       icon: WorkIcon,
       image: WorkImage,
-      title: 'Work',
+      title: 'Experience',
     },
   ],
   [

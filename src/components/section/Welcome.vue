@@ -2,7 +2,13 @@
   <div class="welcome">
     <Logo class="logo" />
     <h1>Mike Berman</h1>
-    <h3>Staff front end developer</h3>
+    <h3>Staff Front End Engineer</h3>
+    <p>
+      15+ years of experience driving large-scale application architecture &amp;
+      cross-organisational technical leadership. Proven record of driving multi-year
+      projects, mentoring senior engineers, and shipping high-impact internal tools for
+      100,000+ users at Meta.
+    </p>
   </div>
 </template>
 
@@ -32,6 +38,12 @@ export default {
 
   h1 {
     font-size: 42px;
+  }
+
+  p {
+    font-size: 0.875em;
+    margin: 24px auto 0;
+    width: 66%;
   }
 }
 </style>

@@ -54,6 +54,10 @@ export default {
   th,
   td {
     padding-bottom: 12px;
+
+    @media print {
+      padding-bottom: 6px;
+    }
   }
 
   a {

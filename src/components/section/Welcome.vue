@@ -43,7 +43,7 @@ export default {
   p {
     font-size: 0.875em;
     margin: 24px auto 0;
-    width: 66%;
+    width: 75%;
   }
 }
 </style>

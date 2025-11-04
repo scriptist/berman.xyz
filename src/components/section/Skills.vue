@@ -28,6 +28,10 @@ export default {
 
   li:not(:last-child) {
     margin-bottom: 12px;
+
+    @media print {
+      margin-bottom: 6px;
+    }
   }
 }
 </style>

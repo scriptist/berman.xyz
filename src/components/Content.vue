@@ -51,5 +51,7 @@ export default {
 
 <style scoped lang="scss">
 .content {
+  display: flex;
+  flex-direction: column;
 }
 </style>

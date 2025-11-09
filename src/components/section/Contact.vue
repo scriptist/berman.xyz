@@ -18,10 +18,6 @@
           <th>GitHub:</th>
           <td><a href="https://github.com/scriptist" target="_blank">github.com/scriptist</a></td>
         </tr>
-        <tr>
-          <th>Location:</th>
-          <td>Sydney, Australia</td>
-        </tr>
       </tbody>
     </table>
   </div>

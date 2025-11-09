@@ -13,14 +13,14 @@
         Cisco Navigators we used previously
       </li>
       <li>
-        Organised and hosted company-wide conference for front-end developers for five years,
-        growing from 50 to 300 attendees. This became the primary forum for sharing best practices,
-        as well as showcasing new technologies and tools
-      </li>
-      <li>
         Resolved a key meeting-room efficiency issue, increasing room utilisation by 15%+. This work
         won a company-wide award and I presented it at our company all-hands in front of the CEO,
         CFO and thousands of colleagues
+      </li>
+      <li>
+        Organised and hosted company-wide conference for front-end developers for five years,
+        growing from 50 to 300 attendees. This became the primary forum for sharing best practices,
+        as well as showcasing new technologies and tools
       </li>
     </Company>
     <Company name="IRESS" contract :from="new Date(2016, 10)" :to="new Date(2017, 1)">

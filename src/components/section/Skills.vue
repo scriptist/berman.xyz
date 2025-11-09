@@ -1,11 +1,27 @@
 <template>
   <div class="skills">
+    <h2>Core Front-End Expertise</h2>
     <ul>
       <li>
-        <strong>Languages</strong>: JavaScript (ES6), TypeScript, Flow, CSS, PHP, Hack, Python
+        <strong>Languages & frameworks</strong>: JavaScript (ESNext), TypeScript, Flow, React.js
+        (Expert), Node.js
       </li>
-      <li><strong>Frameworks &amp; Libraries</strong>: React, Vue.js, Node.js</li>
-      <li><strong>Tooling & Build Systems</strong>: Webpack, Gulp, PostCSS, SASS</li>
+      <li><strong>Data fetching & state</strong>: GraphQL (Relay), Recoil, Redux</li>
+      <li><strong>Testing</strong>: Jest, React Testing Library</li>
+      <li><strong>Styling</strong>: CSS-in-JS (Emotion), SASS, CSS Modules, PostCSS</li>
+      <li><strong>Broader competencies</strong>: Vue.js, Python, PHP, Hack</li>
+    </ul>
+
+    <h2>Staff-Level Competencies</h2>
+    <ul>
+      <li>
+        <strong>Architecture</strong>: Large-scale front-end architecture, design systems, web
+        performance optimization, API design, accessibility (WCAG/a11y)
+      </li>
+      <li>
+        <strong>Leadership</strong>: Technical strategy & roadmapping, cross-functional leadership,
+        senior engineer mentorship, data-driven development (A/B testing)
+      </li>
     </ul>
   </div>
 </template>
@@ -18,20 +34,23 @@ export default {
 
 <style scoped lang="scss">
 .skills {
-  max-width: 600px;
+  max-width: 650px;
+
+  @media print {
+    max-width: none;
+  }
+
+  h2:not(:first-child) {
+    margin-top: 12px;
+  }
 
   ul {
-    list-style: none;
+    margin-bottom: 0;
     margin-top: 0;
-    padding-left: 0;
   }
 
   li:not(:last-child) {
-    margin-bottom: 12px;
-
-    @media print {
-      margin-bottom: 6px;
-    }
+    margin-bottom: 4px;
   }
 }
 </style>

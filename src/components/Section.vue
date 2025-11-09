@@ -26,7 +26,10 @@ export default {
     const backgroundColor = this.current ? `rgba(${hexToRgb(section.color)}, .5)` : '';
 
     return (
-      <div class={`section ${this.current ? 'current' : ''} ${this.sectionKey}`} style={{ backgroundColor }}>
+      <div
+        class={`section ${this.current ? 'current' : ''} ${this.sectionKey}`}
+        style={{ backgroundColor }}
+      >
         <SectionTitle class="title" sectionKey={this.sectionKey} />
         <Content class="content" />
       </div>
@@ -101,18 +104,17 @@ export default {
 
   @media print {
     background: none !important;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     min-height: 0;
-    order: 2  ;
     opacity: 1;
     padding: 0;
 
     &.WELCOME {
-      order: 0;
+      order: -2;
     }
 
     &.CONTACT {
-      order: 1;
+      order: -1;
     }
 
     &.FTIC {

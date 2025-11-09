@@ -40,7 +40,6 @@ export default {
 <style scoped lang="scss">
 .company {
   display: flex;
-  page-break-inside: avoid;
 
   &:not(:last-child) {
     margin-bottom: 36px;
@@ -52,6 +51,27 @@ export default {
 
   .left {
     flex: 1 0 6.25rem;
+
+    @media print {
+      align-items: baseline;
+      display: flex;
+
+      .name {
+        margin-bottom: 0;
+        margin-right: auto;
+      }
+
+      .contract::after {
+        content: ' \2022 ';
+        margin: 0 12px;
+      }
+
+      .dates {
+        order: 1;
+        white-space: nowrap;
+        width: 112px;
+      }
+    }
   }
 
   .right {
@@ -61,12 +81,17 @@ export default {
     line-height: 1.5;
     margin-left: 20px;
 
+    li {
+      page-break-inside: avoid;
+    }
+
     li:not(:last-child) {
       margin-bottom: 8px;
     }
 
     @media print {
       color: inherit;
+      font-size: 1em;
     }
   }
 
@@ -111,6 +136,10 @@ export default {
     .right {
       margin-left: 24px;
       margin-top: 8px;
+
+      @media print {
+        margin-top: 4px;
+      }
     }
   }
 }

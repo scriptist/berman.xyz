@@ -32,6 +32,10 @@ export default {
 .section-title {
   align-items: center;
   display: flex;
+
+  @media print {
+    margin-bottom: 10px;
+  }
 }
 </style>
 
@@ -52,6 +56,10 @@ export default {
 
   .fill {
     fill: currentColor;
+  }
+
+  @media print {
+    display: none;
   }
 }
 </style>

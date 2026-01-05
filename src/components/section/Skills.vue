@@ -40,8 +40,12 @@ export default {
     max-width: none;
   }
 
-  h2:not(:first-child) {
-    margin-top: 12px;
+  h2 {
+    margin-bottom: 4px;
+
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
   }
 
   ul {

@@ -2,7 +2,7 @@
   <div class="welcome">
     <Logo class="logo" />
     <h1>Mike Berman</h1>
-    <h3>Staff Front End Engineer &mdash; Sydney, Australia</h3>
+    <h3>Staff Front End Engineer</h3>
     <p>
       15+ years of experience driving large-scale application architecture &amp;
       cross-organisational technical leadership. Proven record of driving multi-year projects,
@@ -34,6 +34,10 @@ export default {
     height: 64px;
     margin-bottom: 32px;
     width: 64px;
+
+    @media print {
+      display: none;
+    }
   }
 
   h1 {

@@ -6,6 +6,16 @@
           <th>Email:</th>
           <td><a href="mailto:mike@berman.xyz">mike@berman.xyz</a></td>
         </tr>
+        <!--
+        <tr>
+          <th>Phone:</th>
+          <td>0468 347 251</td>
+        </tr>
+        -->
+        <tr>
+          <th>Location:</th>
+          <td>Sydney, Australia</td>
+        </tr>
         <tr>
           <th>LinkedIn:</th>
           <td>

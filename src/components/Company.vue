@@ -1,9 +1,9 @@
 <template>
   <div class="company">
     <div class="left">
-      <div class="name">
+      <h2 class="name">
         {{ name }}
-      </div>
+      </h2>
       <div class="dates">{{ formatDate(from) }} &ndash; {{ formatDate(to) }}<br /></div>
       <div class="contract" v-if="contract">Contract</div>
     </div>
@@ -39,6 +39,7 @@ export default {
 
 <style scoped lang="scss">
 .company {
+  break-inside: avoid;
   display: flex;
 
   &:not(:last-child) {
@@ -97,7 +98,6 @@ export default {
 
   .name {
     color: #474;
-    font-size: 1.25em;
 
     @media print {
       color: inherit;

@@ -2,9 +2,10 @@
   <div class="work">
     <Company name="Meta" :from="new Date(2017, 6)" :to="new Date(2025, 8)">
       <li>
-        Led the Smart Office team, delivering internal applications (navigation, room management,
-        and video conferencing) used by 100k+ employees. Helped define the multi-year technical
-        roadmap and scaled the platform across hundreds of global campuses and data centres
+        Tech lead on the Smart Office team, delivering internal applications for navigation, room
+        management, and video conferencing used by 100k+ employees. Helped define the multi-year
+        technical roadmap and scaled the platform across hundreds of global campuses and data
+        centres
       </li>
       <li>
         Drove cross-organizational alignment to deliver VC Panel's first two major versions,

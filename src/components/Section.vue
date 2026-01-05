@@ -88,8 +88,7 @@ export default {
     margin-left: 66px;
 
     @media print {
-      margin-left: 58px;
-      margin-right: 58px;
+      margin: 0;
     }
 
     @media screen and (max-width: 1000px) {
